@@ -70,3 +70,7 @@ FROM EMPLOYEES;
 SELECT *
 FROM EMPLOYEES
 WHERE LAST_NAME = '¹Ú' OR FIRST_NAME = '¼öÇö';
+
+
+-------------------------------------------------------------------------------
+ 
