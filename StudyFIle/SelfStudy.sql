@@ -1,25 +1,25 @@
--- 1
+-- 1번 문제
 select salary * 12, last_name
 from employees
 where salary * 12 >= 120000;
 
--- 2
+-- 2번 문제
 select last_name, department_id, employee_id
 from employees
 where employee_id = 176;
 
--- 3
+-- 3번 문제
 select last_name, salary * 12 as 연봉
 from employees
 where salary * 12 between 150000 and 200000;
 
---4
+-- 4번 문제
 select last_name, employee_id, hire_date
 from employees
 where hire_date between '030101' and '050530'
 order by hire_date desc;
 
---5
+-- 5번 문제
 select last_name, department_id
 from employees
 where department_id in (20, 50)
@@ -46,26 +46,26 @@ FROM EMPLOYEES
 WHERE MANAGER_ID IS NOT NULL ;
 
 -- 10번 문제 : 
+SELECT LAST_NAME, COMMISSION_PCT, SALARY * 12 AS "ANNSAL"
+FROM EMPLOYEES
+WHERE COMMISSION_PCT IS NOT NULL
+ORDER BY SALARY DESC;
 
--- 11번 문제 :
+-- 11번 문제 O
+SELECT LAST_NAME
+FROM EMPLOYEES
+WHERE LAST_NAME LIKE '___a%';
 
 -- 12번 문제 :
-
--- 13번 문제 : 
-SELECT SALARY, FIRST_NAME || ' ' || LAST_NAME AS NAME
+SELECT LAST_NAME
 FROM EMPLOYEES
-WHERE (SALARY BETWEEN 3000 AND 5000)
-    AND
-    ( JOB_ID =  'IT_PROG')
-ORDER BY SALARY;
+WHERE LAST_NAME LIKE '%e%' AND LAST_NAME LIKE '%a%' ;
 
--- 14번 문제 : 
-SELECT DISTINCT JOB_ID
-FROM JOB_HISTORY
-WHERE DEPARTMENT_ID IN (30, 90)
-ORDER BY JOB_ID;
+-- 13번 문제 :  
 
--- 15번 문제 : 
+-- 14번 문제 :  
+
+-- 15번 문제 :  
 
 -- 16번 문제 : 
 
