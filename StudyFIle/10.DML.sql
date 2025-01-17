@@ -27,5 +27,8 @@ UPDATE 네이버회원
 SET 이름 = 'JeongJin'
 WHERE ID = 'NEW_ID';
 
+-- 그동안 한 작업을 DB에 저장하는 것
+COMMIT;
+
 //데이터 복구하는 명령어, CTRL + 'Z' 느낌?
 ROLLBACK;
