@@ -27,3 +27,5 @@ UPDATE 네이버회원
 SET 이름 = 'JeongJin'
 WHERE ID = 'NEW_ID';
 
+//데이터 복구하는 명령어, CTRL + 'Z' 느낌?
+ROLLBACK;
